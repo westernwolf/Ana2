@@ -2,6 +2,8 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = de_CH
 
+% Main
+
 \documentclass[a4paper,10pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -11,65 +13,68 @@
 \usepackage{graphicx}
 \usepackage{color}
 	\definecolor{orange}{RGB}{255,127,0}
+	
+\newcommand{\R}[0]{\text{\rmfamily I\!R}}
+\newcommand{\abs}[1]{\lvert #1\rvert}
 
-\title{Analysis (Spick)}
-\author{Westernwolf}
+%\title{Analysis (Spick)}
+%\author{Westernwolf}
 
 \begin{document}
 
-\maketitle
-\newpage
+%\maketitle
+%\newpage
 
 \tableofcontents
 \newpage
 
-\section{bla die bla Resume}
-	%\input{AnalysisRes}
-\section{Diskrete Mathematik}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\subsection{Beweise}
-		\subsubsection{Direkter Beweis}
-		
-		\subsubsection{Indirekter Beweis}
-		
-		\subsubsection{Induktionsbeweis}
-		
-		\subsubsection{Beweis durch Wiederspruch}
+\input{SubFiles/Ana2_Integration.tex}
 
-\section{Beweise durch völlständige Induktion}
-	
-	\subsection{Prinzip der vollständigen Induktion}u
-	
-\section{Folgen}
-	
-\section{Reihen (series)}
-	
-	\subsection{Spezielle Reihen}
+% old stuff ---------------------------------------------------------------------------------------------------------------------------------------
+%\section{Diskrete Mathematik}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	%\subsection{Beweise}
+	%	\subsubsection{Direkter Beweis}
 		
-	\subsection{Summen von Reihen}
+		%\subsubsection{Indirekter Beweis}
 		
-	\subsection{KonvergenzKriterien}
+%		\subsubsection{Induktionsbeweis}
 		
-		\subsubsection{Mittels der Definition}
-		$\sqrt{•}$
+%		\subsubsection{Beweis durch Wiederspruch}
+
+%\section{Beweise durch völlständige Induktion}
+	
+%	\subsection{Prinzip der vollständigen Induktion}u
+	
+%\section{Folgen}
+	
+%\section{Reihen (series)}
+	
+%	\subsection{Spezielle Reihen}
+		
+%	\subsection{Summen von Reihen}
+		
+%	\subsection{KonvergenzKriterien}
+		
+%		\subsubsection{Mittels der Definition}
 			
-		\subsubsection{$\lim_{n\to\infty}a_n=0$}
+%		\subsubsection{$\lim_{n\to\infty}a_n=0$}
 			
-		\subsubsection{Majoranten- und Minorantenkriterium}
+%		\subsubsection{Majoranten- und Minorantenkriterium}
 			
-		\subsubsection{Vergleichskriterium}
+%		\subsubsection{Vergleichskriterium}
 			
-		\subsubsection{Quotientenkriterium}
+%		\subsubsection{Quotientenkriterium}
 			
-		\subsubsection{Wurzelkriterium}
+%		\subsubsection{Wurzelkriterium}
 			
-		\subsubsection{Integralkriterium}
+%		\subsubsection{Integralkriterium}
 			
-		\subsubsection{Leibnitz-Kritrerium}
+%		\subsubsection{Leibnitz-Kritrerium}
 			
-		\subsubsection{Absolute Konvergenz}
+%		\subsubsection{Absolute Konvergenz}
 			
-		\subsubsection{Cauchy-Kondensationstest}
+%		\subsubsection{Cauchy-Kondensationstest}
 			
 \end{document}
 
