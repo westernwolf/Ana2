@@ -1,10 +1,31 @@
 \section{Integration}
 	{\color{red}p.485/487}
 
+$f$ ist eine Funktion von $x$
 \begin{itemize}
 	\item Effektivwert,
-		auch Quadratisches Mittel genannt: \\
-		$f:[a,b]\rightarrow\R; \quad \sqrt{\frac{1}{b-a}\int^b_a\abs{f}^2}$
-	\item Partielle Integration\\
-		$\int u'v = uv-\int uv'$
+		auch Quadratisches Mittel genannt: 
+	\[
+		f:[a,b]\rightarrow\R; \quad \sqrt{\frac{1}{b-a}\int^b_a\abs{f}^2}
+	\]
+	\item Linearer Mittelwert/"mittlere Funktionshöhe" 
+	\[
+		\frac{1}{b-a}\int^b_af(x)dx
+	\] 
+	\item Gleichrichtwert
+	\[
+		\frac{1}{b-a}\int^a_b\abs{f(x)}dx
+	\]
+	\item Partielle Integration
+	\[
+		\int u'v = uv-\int uv'
+	\]
+	\item Allgemeine Potenzregel {\color{red}p.485}
+	\[
+		\int f\alpha f' = \frac{f^{\alpha+1}}{\alpha+1} \quad(\forall \alpha\neq-1)
+	\]
+	\item Log-Regel
+	\[
+		\int\frac{f'}{f}=\ln\abs{f}
+	\]
 \end{itemize}	
