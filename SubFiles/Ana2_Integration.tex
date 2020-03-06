@@ -28,4 +28,21 @@ $f$ ist eine Funktion von $x$
 	\[
 		\int\frac{f'}{f}=\ln\abs{f}
 	\]
+	\item Substitution  {\color{red}p.491}
+	\[
+		\int f(x)dx \stackrel{!}{=}\int f(g(t))\underbrace{d(g(t))}_{df = \frac{df}{dx}dx=f'dx}=\int f(g(t))g'(t)dt  \newline
+	\]
+	\[
+		x=g(t) \rightarrow g{-1}=t\]
+	\[
+		dx = g'(t)dt
+	\]
+	\item Universalsubstitution/Rationalisierung
+	\begin{align}
+		\int (\text{Rationale Funktion aus }\{\cos(x);\sin(x)\})dx \\
+		t:=\tan(\frac{x}{2} \Rightarrow \cos(x)\stackrel{!}{=}\frac{1-t^2}{1+t^2}; \quad\sin(x)\stackrel{!}{=}\frac{2t}{1+t^2} \\
+		dt=d(\tan(\frac{x}{2})=\tan(\frac{x}{2}\nonumber \\
+		\Rightarrow dt = (1+t^2=\frac{1}{2}dx\notag\\
+		\frac{2dt}{1-t^2}=dx
+	\end{align}
 \end{itemize}	
