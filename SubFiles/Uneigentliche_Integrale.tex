@@ -1,0 +1,28 @@
+\section{Uneigentliche Integrale}
+Das Intervall ($\vec{x}$) kann $\infty$ sein, oder der Wertebereich ($\vec{y}$).
+\begin{align*}
+&\int_a^\infty f(x)dx:=\lim_{t\rightarrow\infty}\left(\int_a^t f(x)dx\right) = 
+	\begin{cases} 
+		 konvergent & (endlicher Flaecheninhalt)\\
+		divergent
+	\end{cases}
+	\\
+	&\int_{-\infty}^{a}f(x)dx = lim_{t\rightarrow-\infty}\left(\int_t^af(x)dx\right)\\
+	&\rightarrow\qquad F(\infty)-F(a);F(a)-F(-\infty) \rightarrow \text{konventionelle Limit-Rechnung}\\
+	&\int^\infty_{-\infty}f(x)dx\stackrel{\text{Zerlegung}}{=}\left(\int^a_{-\infty}f(x)dx\right)\left(\int^\infty_af(x)dx\right) \color{red}{(! \D \stackrel{!}{=}\R)}
+\end{align*}
+\subsection{Folgerungen und Spezialfälle}
+\begin{align*}
+&\int^\infty_A \frac{1}{x^\alpha}dx \text{ konvergiert} \Leftrightarrow\alpha>1\quad(\forall A>0)\\
+&\int^\infty_af(x)dx \text{ konvergiert} \Rightarrow f(x)=y< \stackrel{x\rightarrow\infty}{\rightarrow}0 \\
+&\int^\infty_af(x)dx \text{ divergiert} \Leftarrow f(x)=y< \stackrel{x\rightarrow\infty}{\rightarrow}\R\backslash \{0\} 
+\end{align*}
+\subsection{Majorante/Minorante}
+Dies ist Vergleichbar mit Majorante und Minorante einer Folge.\\
+Man wählt eine Funktion die immer grösser ist als der Betrag der Funktion, von welcher man bestimmen möchte, ob sie konvergiert/divergiert ({\color{red}p. 503}).
+\begin{align*}
+& x \in\left[a;\infty\right),\abs{f(x)} \leq g(x)\\
+&\int^\infty_a g(x)dx \text{ konvergiert}&\Rightarrow\int^\infty_a \abs{f(x)}dx \text{ konvergiert}\\
+&&\stackrel{{\color{red}\xcancel{\Leftarrow}}}{\Rightarrow}\int^\infty_af(x)dx \text{ konvergiert}
+\end{align*}
+
