@@ -43,3 +43,12 @@ Z.i.g. $b$ ist z.B. eine Polstelle. $b^-$ ist kleiner als $b$.
 x\in\left[a,b\right):\quad \int^{b^-}_a f(x)\dx:=\lim_{t\rightarrow b^-} \int^{t<b}_af(x)\dx\\
 x\in\left(a,b\right]:\int^b_{a^+}f(x)\dx:= \lim_{t\rightarrow a^+}\left(\int^b_tf(x)\dx\right)
 \end{align}
+
+\subsection{Cauchy Hauptwert, aka. Polstelle in $\D$}
+Abgekürzt C.H. (oder P.V. für prinziple Value). Wenn im zu integrierenden Bereich (ohne Rand) eine
+Polstelle liegt, kann man es aufteilen. Im schlimmsten Fall erhält man $\dots \infty -\infty$, da die Integrale einzeln ausgewertet werden müssen. Dies ergäbe eine unbestimmbare Lösung.  Dies wird mit C.H. umgangen.
+\begin{align*}
+\int^b_a f(x)\dx=\lim_{\epsilon\rightarrow 0^+}\left(\int^{x_0-{\color{orange}\epsilon}}_a f(x)\dx +\int^b_ {x_0+{\color{orange}\epsilon}}f(x)\dx \right)
+\end{align*}
+Durch das $\epsilon$ sind die Integrationsgrenzen gleich weit von der Polstelle entfernt.\\
+{\color{red}Lücken/Unstetigkeiten/Polstellen dürfen nicht ignoriert werden $\rightarrow$ Zerlegung des Intervall}
